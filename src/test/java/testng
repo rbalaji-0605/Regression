@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Regression">
+    
+  
+  <test name="LoginTest">
+	<parameter name="browser" value="FireFox"/>
+     <parameter name="environment" value="dev"/>
+    <classes>
+     <!-- <class name="TestCases.Login_TestCase"/> -->
+     <class name="TestCases.Signup_TestCase"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
