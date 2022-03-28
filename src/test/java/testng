@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel="false" name="Regression">
-    
-  
-  <test name="LoginTest">
-	<parameter name="browser" value="FireFox"/>
+    <parameter name="browser" value="Chrome"/>
      <parameter name="environment" value="dev"/>
+  
+  <test name="TextModule_Regression">
+	
     <classes>
-     <!-- <class name="TestCases.Login_TestCase"/> -->
-     <class name="TestCases.Signup_TestCase"/>
+     <class name="TestCases.Login_TestCase"/> 
+     <!-- <class name="TestCases.DashBoard_TestCase"/> -->
+     <!-- <class name="TestCases.Signup_TestCase"/> -->
+     <class name="TestCases.CreateProject_TestCase"/>
+     <class name="TestCases.AppTextModule_TestCase"/>
+    <class name="TestCases.Download_TestCase"/> 
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,17 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="26" passed="25" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-16T13:12:52 IST" name="Regression" finished-at="2022-02-16T13:13:20 IST" duration-ms="27721">
+  <suite started-at="2022-03-28T14:26:55 IST" name="Regression" finished-at="2022-03-28T14:28:09 IST" duration-ms="74393">
     <groups>
     </groups>
-    <test started-at="2022-02-16T13:12:52 IST" name="LoginTest" finished-at="2022-02-16T13:13:20 IST" duration-ms="27721">
-      <class name="TestCases.Signup_TestCase">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Signup_TestCase@1115ec15]" started-at="2022-02-16T13:12:52 IST" name="setup" finished-at="2022-02-16T13:12:57 IST" duration-ms="4886" status="PASS">
+    <test started-at="2022-03-28T14:26:55 IST" name="TextModule_Regression" finished-at="2022-03-28T14:28:09 IST" duration-ms="74393">
+      <class name="TestCases.AppTextModule_TestCase">
+        <test-method signature="Validate_AdminFonts_Option()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:27:03 IST" name="Validate_AdminFonts_Option" finished-at="2022-03-28T14:27:03 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_AdminFonts_Option -->
+        <test-method signature="Validate_DuplicateButton_text()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:27:03 IST" name="Validate_DuplicateButton_text" finished-at="2022-03-28T14:27:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_DuplicateButton_text -->
+        <test-method signature="Validate_EditText_Basetemplates_Rotate_Resize()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:27:03 IST" name="Validate_EditText_Basetemplates_Rotate_Resize" finished-at="2022-03-28T14:28:02 IST" duration-ms="58968" status="FAIL">
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
+            <message>
+              <![CDATA[move target out of bounds
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'ANIMCHNLAP297s-MacBook-Pro.local', ip: 'fe80:0:0:0:14bd:852d:eaf8:99b9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1453fee9a164fcc025061d5aef68c5b2, actions {actions=[org.openqa.selenium.interactions.Sequence@2fe74516]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/kc/7y0pkp9n3hn...}, goog:chromeOptions: {debuggerAddress: localhost:65154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65154/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1453fee9a164fcc025061d5aef68c5b2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds
+  (Session info: chrome=99.0.4844.84)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'ANIMCHNLAP297s-MacBook-Pro.local', ip: 'fe80:0:0:0:14bd:852d:eaf8:99b9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.1', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1453fee9a164fcc025061d5aef68c5b2, actions {actions=[org.openqa.selenium.interactions.Sequence@2fe74516]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.84, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/kc/7y0pkp9n3hn...}, goog:chromeOptions: {debuggerAddress: localhost:65154}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:65154/devtoo..., se:cdpVersion: 99.0.4844.84, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1453fee9a164fcc025061d5aef68c5b2
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:617)
+at Utility.ReusableMethods_WebActions.performMoveTextContainer(ReusableMethods_WebActions.java:56)
+at PageActions.AppSidePageAction.moveTextContainer(AppSidePageAction.java:99)
+at TestCases.AppTextModule_TestCase.Validate_EditText_Basetemplates_Rotate_Resize(AppTextModule_TestCase.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_EditText_Basetemplates_Rotate_Resize -->
+        <test-method signature="Validate_EditText_Prebuilts_Rotate_Resize()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:02 IST" name="Validate_EditText_Prebuilts_Rotate_Resize" finished-at="2022-03-28T14:28:03 IST" duration-ms="847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_EditText_Prebuilts_Rotate_Resize -->
+        <test-method signature="Validate_Grouping_Different_TextElements()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_Grouping_Different_TextElements" finished-at="2022-03-28T14:28:03 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Grouping_Different_TextElements -->
+        <test-method signature="Validate_LockButton_text()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_LockButton_text" finished-at="2022-03-28T14:28:03 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_LockButton_text -->
+        <test-method signature="Validate_Text_Alignment()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_Text_Alignment" finished-at="2022-03-28T14:28:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Text_Alignment -->
+        <test-method signature="Validate_Text_Arrangements()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_Text_Arrangements" finished-at="2022-03-28T14:28:03 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Text_Arrangements -->
+        <test-method signature="Validate_Text_Deletion()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_Text_Deletion" finished-at="2022-03-28T14:28:03 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Text_Deletion -->
+        <test-method signature="Validate_Text_Using_DeleteElement()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_Text_Using_DeleteElement" finished-at="2022-03-28T14:28:03 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Text_Using_DeleteElement -->
+        <test-method signature="Validate_Text_Using_DeleteGroup()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_Text_Using_DeleteGroup" finished-at="2022-03-28T14:28:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Text_Using_DeleteGroup -->
+        <test-method signature="Validate_Ungroup_TextPrebuilts()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_Ungroup_TextPrebuilts" finished-at="2022-03-28T14:28:03 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Ungroup_TextPrebuilts -->
+        <test-method signature="Validate_UploadFont_Section()[pri:0, instance:TestCases.AppTextModule_TestCase@6bc407fd]" started-at="2022-03-28T14:28:03 IST" name="Validate_UploadFont_Section" finished-at="2022-03-28T14:28:03 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_UploadFont_Section -->
+      </class> <!-- TestCases.AppTextModule_TestCase -->
+      <class name="TestCases.Download_TestCase">
+        <test-method signature="Validate_Download_DesignAsPNG()[pri:0, instance:TestCases.Download_TestCase@291f18]" started-at="2022-03-28T14:28:03 IST" name="Validate_Download_DesignAsPNG" finished-at="2022-03-28T14:28:09 IST" duration-ms="6243" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Download_DesignAsPNG -->
+        <test-method signature="Validate_Download_DesignAs_JPG()[pri:0, instance:TestCases.Download_TestCase@291f18]" started-at="2022-03-28T14:28:09 IST" name="Validate_Download_DesignAs_JPG" finished-at="2022-03-28T14:28:09 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Download_DesignAs_JPG -->
+        <test-method signature="Validate_Download_DesignAs_PDF()[pri:0, instance:TestCases.Download_TestCase@291f18]" started-at="2022-03-28T14:28:09 IST" name="Validate_Download_DesignAs_PDF" finished-at="2022-03-28T14:28:09 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Download_DesignAs_PDF -->
+        <test-method signature="Validate_Download_DesignAs_PNG_TransparentBG()[pri:0, instance:TestCases.Download_TestCase@291f18]" started-at="2022-03-28T14:28:09 IST" name="Validate_Download_DesignAs_PNG_TransparentBG" finished-at="2022-03-28T14:28:09 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Download_DesignAs_PNG_TransparentBG -->
+        <test-method signature="Validate_Download_MultipleSlideDesign_AsJPG_InZIP()[pri:0, instance:TestCases.Download_TestCase@291f18]" started-at="2022-03-28T14:28:09 IST" name="Validate_Download_MultipleSlideDesign_AsJPG_InZIP" finished-at="2022-03-28T14:28:09 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Download_MultipleSlideDesign_AsJPG_InZIP -->
+        <test-method signature="Validate_Download_MultipleSlideDesign_AsPNG_InZIP()[pri:0, instance:TestCases.Download_TestCase@291f18]" started-at="2022-03-28T14:28:09 IST" name="Validate_Download_MultipleSlideDesign_AsPNG_InZIP" finished-at="2022-03-28T14:28:09 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Validate_Download_MultipleSlideDesign_AsPNG_InZIP -->
+      </class> <!-- TestCases.Download_TestCase -->
+      <class name="TestCases.Login_TestCase">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:TestCases.Login_TestCase@1e8b7643]" started-at="2022-03-28T14:26:42 IST" name="setup" finished-at="2022-03-28T14:26:55 IST" duration-ms="12363" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FireFox]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
             <param index="1">
@@ -23,23 +171,41 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validate_the_User_is_able_to_SignUp()[pri:0, instance:TestCases.Signup_TestCase@1115ec15]" started-at="2022-02-16T13:12:57 IST" name="validate_the_User_is_able_to_SignUp" finished-at="2022-02-16T13:13:19 IST" duration-ms="22169" status="PASS">
+        <test-method signature="validate_the_User_is_able_to_Login_to_an_existing_account()[pri:0, instance:TestCases.Login_TestCase@1e8b7643]" started-at="2022-03-28T14:26:55 IST" name="validate_the_User_is_able_to_Login_to_an_existing_account" finished-at="2022-03-28T14:26:56 IST" duration-ms="1037" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_the_User_is_able_to_SignUp -->
-        <test-method signature="validate_the_User_is_able_to_SignUp_UsingGoogle()[pri:0, instance:TestCases.Signup_TestCase@1115ec15]" started-at="2022-02-16T13:13:19 IST" name="validate_the_User_is_able_to_SignUp_UsingGoogle" finished-at="2022-02-16T13:13:19 IST" duration-ms="13" status="PASS">
+        </test-method> <!-- validate_the_User_is_able_to_Login_to_an_existing_account -->
+        <test-method signature="validate_the_User_is_able_to_View_the_Home_Page()[pri:0, instance:TestCases.Login_TestCase@1e8b7643]" started-at="2022-03-28T14:26:56 IST" name="validate_the_User_is_able_to_View_the_Home_Page" finished-at="2022-03-28T14:27:02 IST" duration-ms="6071" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_the_User_is_able_to_SignUp_UsingGoogle -->
-        <test-method signature="validate_the_User_is_able_to_Signup_UsingFacebook()[pri:0, instance:TestCases.Signup_TestCase@1115ec15]" started-at="2022-02-16T13:13:19 IST" name="validate_the_User_is_able_to_Signup_UsingFacebook" finished-at="2022-02-16T13:13:19 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- validate_the_User_is_able_to_View_the_Home_Page -->
+        <test-method signature="validate_the_user_is_able_to_View_the_Menu_Options_on_Tap()[pri:0, instance:TestCases.Login_TestCase@1e8b7643]" started-at="2022-03-28T14:27:02 IST" name="validate_the_user_is_able_to_View_the_Menu_Options_on_Tap" finished-at="2022-03-28T14:27:02 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validate_the_User_is_able_to_Signup_UsingFacebook -->
-        <test-method is-config="true" signature="browserClose()[pri:0, instance:TestCases.Signup_TestCase@1115ec15]" started-at="2022-02-16T13:13:19 IST" name="browserClose" finished-at="2022-02-16T13:13:20 IST" duration-ms="490" status="PASS">
+        </test-method> <!-- validate_the_user_is_able_to_View_the_Menu_Options_on_Tap -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.Login_TestCase@1e8b7643]" started-at="2022-03-28T14:28:09 IST" name="tearDown" finished-at="2022-03-28T14:28:15 IST" duration-ms="5511" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserClose -->
-      </class> <!-- TestCases.Signup_TestCase -->
-    </test> <!-- LoginTest -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestCases.Login_TestCase -->
+      <class name="TestCases.CreateProject_TestCase">
+        <test-method signature="validate_the_User_is_able_to_Edit_the_Created_Project_FromDashboard()[pri:0, instance:TestCases.CreateProject_TestCase@181e731e]" started-at="2022-03-28T14:27:02 IST" name="validate_the_User_is_able_to_Edit_the_Created_Project_FromDashboard" finished-at="2022-03-28T14:27:02 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_User_is_able_to_Edit_the_Created_Project_FromDashboard -->
+        <test-method signature="validate_the_User_is_able_to_view_the_created_Projects_are_listed_for_an_Existing_User()[pri:0, instance:TestCases.CreateProject_TestCase@181e731e]" started-at="2022-03-28T14:27:02 IST" name="validate_the_User_is_able_to_view_the_created_Projects_are_listed_for_an_Existing_User" finished-at="2022-03-28T14:27:02 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_User_is_able_to_view_the_created_Projects_are_listed_for_an_Existing_User -->
+        <test-method signature="validate_the_user_is_able_to_Create_a_new_Project_Template()[pri:0, instance:TestCases.CreateProject_TestCase@181e731e]" started-at="2022-03-28T14:27:02 IST" name="validate_the_user_is_able_to_Create_a_new_Project_Template" finished-at="2022-03-28T14:27:02 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_user_is_able_to_Create_a_new_Project_Template -->
+        <test-method signature="validate_the_user_is_able_to_Create_a_new_blank_Project()[pri:0, instance:TestCases.CreateProject_TestCase@181e731e]" started-at="2022-03-28T14:27:02 IST" name="validate_the_user_is_able_to_Create_a_new_blank_Project" finished-at="2022-03-28T14:27:03 IST" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_the_user_is_able_to_Create_a_new_blank_Project -->
+      </class> <!-- TestCases.CreateProject_TestCase -->
+    </test> <!-- TextModule_Regression -->
   </suite> <!-- Regression -->
 </testng-results>

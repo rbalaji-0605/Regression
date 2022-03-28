@@ -2,6 +2,7 @@ package TestCases;
 
 import org.testng.annotations.Test;
 
+import PageActions.DashboardPageAction;
 import PageActions.LoginPageAction;
 
 import Utility.BrowserClass;
@@ -13,30 +14,35 @@ import org.testng.annotations.Parameters;
 
 
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+
+import org.testng.annotations.AfterSuite;
+
+import org.testng.annotations.BeforeSuite;
 
 
 public class Login_TestCase extends BrowserClass{
 
 	
 	private LoginPageAction loginAct;
+	private DashboardPageAction dashAct;
 	
 
 
 
+	
 	@Parameters({"browser","environment"})
-	@BeforeClass
+	@BeforeSuite
 	public void setup(String browser,String environment) {
 		
 		browserSetup(browser,environment);
+		launchApplication();
 		
 	
 	}
 
 	@Test
 	public void validate_the_User_is_able_to_Login_to_an_existing_account() {
-		launchApplication();
+		
 		
 		loginAct=new LoginPageAction();
 		
@@ -52,7 +58,14 @@ public class Login_TestCase extends BrowserClass{
 	}
 	
 	@Test
-	public void validate_the_User_is_able_to_View_the_Home_Page() {
+	public void validate_the_User_is_able_to_View_the_Home_Page() throws InterruptedException {
+		
+		
+		dashAct=new DashboardPageAction();
+		
+		dashAct.verifyTitle();
+		dashAct.readUsername();
+		
 		
 	}
 	
@@ -63,9 +76,14 @@ public class Login_TestCase extends BrowserClass{
 		
 	}
 	
-	@AfterClass
+	@AfterSuite
 	public void tearDown() {
-		//closeBrowser();
+		
+		dashAct.navigateToPicmakerDashBoard();
+		
+		dashAct.clickProfileSetting();
+		dashAct.clickSignout();
+		closeBrowser();
 	}
 
 }

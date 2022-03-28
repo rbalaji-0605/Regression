@@ -19,6 +19,17 @@ public class ReadPropertiesFile {
 	private String newUserPassword;
 	private String yopmailAddress;
 	private String picmakerHomePageTitle;
+	private String picmakerAppTitle;
+	private String categoryName;
+	private String text;
+	private String projectName;
+	private String preBuiltID;
+	private String title;
+	private String subTitle;
+	private String bodyText;
+
+
+
 
 	public ReadPropertiesFile() {
 		try {
@@ -30,7 +41,7 @@ public class ReadPropertiesFile {
 		}
 		prop=new Properties();
 		try {
-			
+
 			prop.load(finstream);
 
 		}
@@ -45,13 +56,13 @@ public class ReadPropertiesFile {
 
 			e.printStackTrace();
 		}
-		
+
 
 
 	}
 	public String getURL(String environment)	{
-		
-		
+
+
 
 		if(environment.equalsIgnoreCase("Dev")) {
 			url=prop.getProperty("Dev");
@@ -91,7 +102,7 @@ public class ReadPropertiesFile {
 
 
 	}
-	
+
 	public String getFirstName()	{
 
 		firstname=prop.getProperty("FirstName");
@@ -100,7 +111,7 @@ public class ReadPropertiesFile {
 
 
 	}
-	
+
 	public String getYopmailAddress()	{
 
 		yopmailAddress=prop.getProperty("yopmail_id");
@@ -109,7 +120,7 @@ public class ReadPropertiesFile {
 
 
 	}
-	
+
 	public String getNewUserPassword()	{
 
 		newUserPassword=prop.getProperty("NewPassword");
@@ -118,7 +129,7 @@ public class ReadPropertiesFile {
 
 
 	}
-	
+
 	public String getPicmakerHomePageTitle()	{
 
 		picmakerHomePageTitle=prop.getProperty("Picmaker_Dashboard");
@@ -128,7 +139,78 @@ public class ReadPropertiesFile {
 
 	}
 
-	
-	
-	
+	public String getPicmakerApptitle()	{
+
+		picmakerAppTitle=prop.getProperty("Picmaker_App");
+
+		return picmakerAppTitle;
+
+
+	}
+
+
+
+	public String getCategoryName() {
+
+		categoryName=prop.getProperty("CategoryName");
+
+		return categoryName;
+
+
+	}
+
+
+	public String getBigTextValue() {
+
+		text=prop.getProperty("BigText");
+		System.out.println(text);
+
+		return text;
+
+	}
+
+
+	public String getTitle() {
+
+		title=prop.getProperty("Title");
+
+		return title;
+
+	}
+
+	public String getsubTitle() {
+
+		subTitle=prop.getProperty("SubTitle");
+
+		return subTitle;
+
+	}
+
+	public String getbodyText() {
+
+		bodyText=prop.getProperty("BodyText");
+
+		return bodyText;
+
+	}
+
+
+	public String getProjectName() {
+
+		projectName=prop.getProperty("Name");
+
+		return projectName;
+
+	}
+
+	public String getPrebuiltID() {
+
+		preBuiltID=prop.getProperty("PrebuiltID");
+
+		return preBuiltID;
+
+	}
+
+
+
 }

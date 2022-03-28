@@ -2,10 +2,23 @@ package TestCases;
 
 import org.testng.annotations.Test;
 
+import PageActions.AppSidePageAction;
+import PageActions.DashboardPageAction;
+
 public class CreateProject_TestCase {
 
+	private DashboardPageAction dashAct;
+	private AppSidePageAction appAct;
+	
+	
 	@Test
-	public void validate_the_user_is_able_to_Create_a_new_blank_Project() {
+	public void validate_the_user_is_able_to_Create_a_new_blank_Project() throws InterruptedException {
+		dashAct=new DashboardPageAction();
+		
+		dashAct.selectTemplateCategory();
+		
+		appAct=new AppSidePageAction();
+		appAct.navigateToAppProject();
 		
 	}
 	

@@ -1,8 +1,11 @@
 package PageObjectModel;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -57,6 +60,10 @@ public class DashboardPage {
 	public WebElement create;
 	
 	
+	@FindAll(@FindBy(xpath="//div[@id='search_dropdown_block']/div/div/button[@class='userrecentsuggestions_category']"))
+	@CacheLookup
+	public List<WebElement> recentSearches;
+	
 	@FindBy(xpath="//div[@id='categorieslist-block']/a/button[contains(text(),'All Templates')]")
 	@CacheLookup
 	public WebElement all_Templates;
@@ -89,6 +96,10 @@ public class DashboardPage {
 	public WebElement facebook_ad;
 	
 	
+	
+	@FindAll(@FindBy(xpath="//div[@id='viewallstartdesttransupdate111']/ul/li"))
+	@CacheLookup
+	public List<WebElement> listOfcategories;
 	
 	
 	
